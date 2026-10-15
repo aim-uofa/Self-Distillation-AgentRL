@@ -1,0 +1,5 @@
+# Keep the shared dependency sources in source distributions as well as checkouts.
+include requirements.txt
+include requirements-kernels.txt
+include constraints.txt
+include Notice.txt

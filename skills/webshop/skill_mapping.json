@@ -1,0 +1,30 @@
+{
+  "skill_files": {
+    "general_skills": "general_skills.md",
+    "apparel": "apparel.md",
+    "footwear": "footwear.md",
+    "home_decor": "home_decor.md",
+    "electronics": "electronics.md",
+    "accessories": "accessories.md",
+    "beauty_health": "beauty_health.md",
+    "other": "other.md"
+  },
+  "task_to_skill": {
+    "apparel": "apparel",
+    "footwear": "footwear",
+    "home_decor": "home_decor",
+    "electronics": "electronics",
+    "accessories": "accessories",
+    "beauty_health": "beauty_health",
+    "other": "other"
+  },
+  "task_keywords": {
+    "apparel": ["shirt", "dress", "pants", "jacket", "sweater", "blouse", "skirt", "coat", "jeans", "shorts"],
+    "footwear": ["shoe", "boot", "sneaker", "sandal", "slipper", "loafer", "heel"],
+    "home_decor": ["pillow", "rug", "curtain", "lamp", "vase", "frame", "candle", "decor"],
+    "electronics": ["phone", "charger", "cable", "speaker", "headphone", "battery", "adapter", "usb"],
+    "accessories": ["bag", "wallet", "belt", "watch", "sunglasses", "hat", "scarf", "glove"],
+    "beauty_health": ["shampoo", "cream", "lotion", "makeup", "brush", "serum", "moisturizer", "soap"],
+    "other": []
+  }
+}

@@ -1,0 +1,75 @@
+# Direct runtime dependencies for the reported working Qwen3.5 environment.
+# Reference: maintainer-provided pip list + conda list, 2026-10-09, Python 3.10.
+# Use: python -m pip install -c constraints.txt -r requirements.txt
+# CUDA extensions are installed afterwards from requirements-kernels.txt.
+# FAISS retrieval and the spaCy language model are installed by launchers/setup_env.sh.
+
+# Qwen3.5 training / rollout stack (install Torch before requirements-kernels.txt)
+torch==2.10.0
+torchvision==0.25.0
+torchaudio==2.10.0
+vllm==0.19.1
+transformers==5.13.0
+tokenizers==0.22.2
+huggingface-hub==1.28.0
+accelerate==1.14.0
+peft==0.20.0
+tensordict==0.10.0
+torchdata==0.11.0
+# Hopper GDN backward uses TileLang; its version is pinned in constraints.txt.
+flash-linear-attention[tilelang]==0.5.2
+fla-core==0.5.2
+xformers==0.0.34
+
+# Shared trainer, data and reporting dependencies
+ray[default]==2.50.0
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.15.3
+datasets==5.0.1
+pyarrow==25.0.0
+hydra-core==1.3.4
+omegaconf==2.3.1
+codetiming==1.4.0
+dill==0.4.1
+einops==0.8.2
+packaging==25.0
+pybind11==3.0.4
+pylatexenc==2.11
+qwen-vl-utils[decord]==0.0.14
+wandb==0.28.1
+matplotlib==3.10.9
+tqdm==4.70.0
+PyYAML==6.0.3
+psutil==7.2.2
+safetensors==0.8.0
+
+# ALFWorld and shared text environments
+alfworld==0.4.2
+textworld==1.7.0
+gymnasium==0.29.1
+stable-baselines3==2.6.0
+gym==0.24.0
+
+# WebShop (do not install its inherited requirements.txt over this environment)
+beautifulsoup4==4.11.1
+cleantext==1.1.4
+Flask==2.1.2
+Werkzeug==2.1.0
+gdown==6.1.0
+pyserini==0.17.0
+pyjnius==1.7.0
+nmslib==2.1.2
+rank-bm25==0.2.2
+scikit-learn==1.7.2
+selenium==4.2.0
+spacy==3.8.7
+thefuzz==0.19.0
+
+# Search-QA HTTP client/server and ScienceWorld (Java 11 is installed by Conda)
+func-timeout==4.3.5
+requests==2.34.2
+fastapi==0.141.1
+uvicorn==0.52.0
+scienceworld==1.2.3
+py4j==0.10.9.9

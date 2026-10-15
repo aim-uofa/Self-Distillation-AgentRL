@@ -1,0 +1,23 @@
+{
+  "skill_files": {
+    "general_skills": "general_skills.md",
+    "measure": "measure.md",
+    "test_conductivity": "test_conductivity.md",
+    "find": "find.md",
+    "chemistry_mix": "chemistry_mix.md",
+    "lifespan": "lifespan.md",
+    "state_change": "state_change.md",
+    "power": "power.md",
+    "life_stages": "life_stages.md"
+  },
+  "task_to_skill": {
+    "measure": "measure",
+    "test_conductivity": "test_conductivity",
+    "find": "find",
+    "chemistry_mix": "chemistry_mix",
+    "lifespan": "lifespan",
+    "state_change": "state_change",
+    "power": "power",
+    "life_stages": "life_stages"
+  }
+}

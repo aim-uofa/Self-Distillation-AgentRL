@@ -1,0 +1,5 @@
+# Install only AFTER requirements.txt, against the installed Torch/CUDA ABI:
+# python -m pip install -c constraints.txt --no-build-isolation --no-deps -r requirements-kernels.txt
+# Matching prebuilt wheels or a compatible CUDA toolkit/compiler are required.
+flash-attn==2.8.3
+causal-conv1d==1.7.0
